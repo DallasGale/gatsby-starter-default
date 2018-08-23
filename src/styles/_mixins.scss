@@ -4,6 +4,10 @@
   background-size: cover;
   background-position: left top;
   background-attachment: absolute;
+
+  @include respond-to(phone-down) {
+    background-position: center center;
+  }
 }
 @mixin font_sacramento {
   font-family: 'Sacramento', cursive;

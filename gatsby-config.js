@@ -3,7 +3,7 @@ module.exports = {
     title: 'Eye Spy Nature',
     author: 'Dallas Gale',
     subscribeData: {
-      title: 'Receive 3 free images',
+      title: 'Subscribe to receive 3 free images',
       fieldLabel: 'you@youremail.com',
       cta: 'Subscribe'
     },

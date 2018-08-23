@@ -1,16 +1,16 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Home from '../components/cta/home.cta';
 
 export default() => {
   return (
-    <div>
-      <h1 className="subscribe__title--thanks">
+    <div className="thanks">
+      <h1 className="thanks__title">
         You have successfully subscribed.
       </h1>
-      <h2 className="hero__subtitle">
+      <h2 className="thanks__subtitle">
         Thanks you!
       </h2>
-      <Link to='/' className="link">HOME</Link>
+      <Home link='/' />
     </div>
   );
 };
