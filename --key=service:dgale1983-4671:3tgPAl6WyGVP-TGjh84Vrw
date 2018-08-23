@@ -1,0 +1,6 @@
+[?25l[13:07:57] Loading Apollo config [started]
+[13:07:57] Loading Apollo config [completed]
+[13:07:57] Fetching current schema [started]
+[13:07:57] Fetching current schema [failed]
+[13:07:57] → No API key was specified. Set an Apollo Engine API key using the `--key` flag or the `ENGINE_API_KEY` environment variable.
+[?25h[?25h

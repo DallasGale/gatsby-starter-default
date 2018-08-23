@@ -7,22 +7,19 @@
 
 // Basic styles
 body {
-  background: black;
+  height: 100vh;
+  @include background;
 }
 
 .background {
   animation-duration: 11s;
   animation-name: zoomIn;
-  background: url('../assets/images/landing-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left top;
-  background-attachment: absolute;
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1;
+  @include background;
 }
 
 .hero {
@@ -37,6 +34,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     height: auto;
+    max-width: 300px;
   }
 
   &__title {
@@ -54,4 +52,82 @@ body {
     padding-left: 130px;
     @include font_sacramento;
   }
+}
+
+
+// Subscribe
+.subscribe {
+  position: absolute;
+  bottom: 80px;
+  height: auto;
+
+  &__title {
+    color: $highlight;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    
+    &--thanks{
+      @extend .hero__title;
+      font-size: 1.5rem;
+      margin-bottom:20px;
+    }
+  }
+  
+
+  &__input {
+    background: $field;
+    border: 0;
+    color: $white;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__button {
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid $highlight;
+    color: $white;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    @include font_sacramento;
+  }
+}
+
+
+// 404
+
+.page-not-found {
+  display: table;
+  height: 100vh;
+  width: 100%;
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    h1, h2 {
+      color: $white;
+    }
+  }
+}
+
+
+.link {
+  color: $link-color;
+  background: $highlight;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 10px;
+  text-decoration: none;
 }

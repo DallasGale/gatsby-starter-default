@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{323:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Eye Spy Nature",author:"Dallas Gale"}}},pathContext:{}}}});
-//# sourceMappingURL=path---index-2e7e166cdfd424b2d552.js.map
