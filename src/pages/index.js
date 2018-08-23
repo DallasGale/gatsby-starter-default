@@ -1,13 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
+const IndexPage = ( {data} ) => (
+  
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section className="hero">
+      <div className="hero__content">
+        <h1 className="hero__title">{ data.site.siteMetadata.title }</h1>
+        <h2 className="hero__subtitle">by { data.site.siteMetadata.author }</h2>
+      </div>
+    </section>
+
+    <div className="background"></div>
   </div>
 )
 
 export default IndexPage
+
+
+export const query = graphql`
+  query HeroQuery {
+    site {
+      siteMetadata {
+        title
+        author
+      }
+    }
+  }
+`

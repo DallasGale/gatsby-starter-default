@@ -1,0 +1,57 @@
+// Import partials
+@import 'animations';
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+
+
+// Basic styles
+body {
+  background: black;
+}
+
+.background {
+  animation-duration: 11s;
+  animation-name: zoomIn;
+  background: url('../assets/images/landing-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  background-attachment: absolute;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1;
+}
+
+.hero {
+  display: table;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  padding: 8%;
+  z-index: 2;
+
+  &__content {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+  }
+
+  &__title {
+    color: $white;
+    font-weight: 100;
+    font-size: 1.9rem;
+    margin-bottom: 0.1em;
+    @include font_prato;
+  }
+
+  &__subtitle {
+    color: $white;
+    font-weight: 100;
+    font-size: 1.8rem;
+    padding-left: 130px;
+    @include font_sacramento;
+  }
+}
