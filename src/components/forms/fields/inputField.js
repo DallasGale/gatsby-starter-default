@@ -13,6 +13,7 @@ const input = css`
   overflow-x: auto;
   margin-top: 5px;
   margin-bottom: 15px;
+  max-width: 300px;
   padding: 0 10px;
   width: 100%;
   text-align: center;

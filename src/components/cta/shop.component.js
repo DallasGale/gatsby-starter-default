@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ShopNow from '../buttons/shopNow';
+import { ShopNowButton } from '../buttons/';
 import { css } from 'emotion';
 import { Motion, spring } from 'react-motion';
 import inprnt from '../../assets/logos/inprnt.png';
@@ -11,11 +11,11 @@ const ShopCTA = props => {
   return (
     <div 
       className={ containerStyle } 
-      style={{ background: props.showShopLogos ? "rgba(0,0,0,0.3)" : "transparent" }} 
       onMouseLeave={ props.handleOnMouse }>
     
       {/* Shop Now CTA */}
-      <ShopNow
+
+      <ShopNowButton
         handleShopCta={ props.handleShopCta }
         showShopLogos={ props.showShopLogos }
         label="Shop Now" />

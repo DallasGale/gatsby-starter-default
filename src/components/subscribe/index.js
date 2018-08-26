@@ -3,7 +3,7 @@ import { css } from 'emotion';
 import mq from '../../js_css/breakpoints';
 import { highlight } from '../../js_css/colors';
 import InputField from '../forms/fields/inputField';
-import SubmitButton from '../buttons/submit';
+import { SubmitButton } from '../buttons/';
 
 
 // - - - -

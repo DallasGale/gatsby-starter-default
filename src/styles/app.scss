@@ -6,8 +6,13 @@
 
 
 // Basic styles
+html {
+  font-size: 16px;
+}
+
 body {
   height: 100vh;
+  font-size: 10px;
   @include background;
 }
 
@@ -59,8 +64,19 @@ input {
   &__subtitle {
     color: $white;
     font-weight: 100;
+    font-size: 0.7rem;
+    letter-spacing: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include font_prato;
+  }
+
+  &__author {
+    color: $white;
+    font-weight: 100;
     font-size: 1.8rem;
     padding-left: 130px;
+    margin-bottom: 90px;
     @include font_sacramento;
   }
 }
@@ -76,7 +92,7 @@ input {
     margin-bottom:20px;
   }
   &__subtitle {
-    @extend .hero__subtitle;
+    @extend .hero__author;
   }
 }
 

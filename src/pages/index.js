@@ -43,7 +43,8 @@ class IndexPage extends React.Component {
         {/* Title / SubTitle  */}
         <div className={ titles }>
           <h1 className="hero__title">{ this.props.data.site.siteMetadata.title }</h1>
-          <h2 className="hero__subtitle">by { this.props.data.site.siteMetadata.author }</h2>
+          <h3 className="hero__subtitle">PHOTOGRAPHY</h3>
+          <h2 className="hero__author">by { this.props.data.site.siteMetadata.author }</h2>
         </div>
         
         {/* Subscribe -> CTA */}
